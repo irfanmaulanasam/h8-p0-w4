@@ -1,6 +1,8 @@
 function fpb(angka1, angka2) {
    var hasil = 0;
    for( var i = 1 ; i < angka2 ; i++ ){
+       //angka1 dan angka 2 harus habis dibagi i
+       //i merupakan representasi dari fpb
        if(angka1 % i === 0 && angka2 % i === 0){
            hasil = i
        }
