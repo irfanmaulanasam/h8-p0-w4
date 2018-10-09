@@ -17,26 +17,3 @@ console.log(fpb(50, 40)); // 10
 console.log(fpb(22, 99)); // 11
 console.log(fpb(24, 36)); // 12
 console.log(fpb(17, 23)); // 1
-
-// Algoritma menentukan FPB dari dua bilangan
-
-// Deklarasi :
-// angka1,angka2,temp,sisa : integer
-
-// Algoritma :
-// read(angka1)
-// read(angka2)
-
-// if(angka1<angka2) then
-//         temp <---- bil1
-//         bil1 < ----- bil2
-//         bil2 < ----- temp
-// end if
-
-// repeat 
-//      sisa <----- bil1 mod bil2
-//      bil1 <----- bil2
-//      bil2 <-----sisa
-// until sisa ≠ 0
-
-// write(bil1)
