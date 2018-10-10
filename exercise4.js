@@ -1,20 +1,18 @@
 function cariModus(arr) {
     modus = arr;
-    //var frekuensi = 0;
+    var frekuensi = 0;
     var hasil = 0;
     for( i = 0 ; i < modus.length ; i++ ){
         for(j = 0 ; j < modus.length ; j++){
-            console.log([i]);
-    //         if(modus[i] === modus[j] && i === j){
-    //             hasil = modus [i];
-    //         }else if(modus[i] !== modus[j] || i !== j){
-    //             hasil = '-1';
-    //         }
-    //         // if(modus[i] === modus[j] && i !== j){
-    //         //    hasil = modus[j];
-    //         // }
+            // frekuensi++;
+           if(modus[i] === modus[j] && i !== j){
+                // if( hasil == modus [i] ){
+                //     frekuensi++;hasil = modus [i]
+                // }
+    
+             }
          }
-    } //return hasil; 
+    } return hasil; 
 }
   // TEST CASES
   console.log(cariModus([10, 4, 5, 2, 4])); // 4
