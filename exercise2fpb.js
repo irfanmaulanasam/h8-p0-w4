@@ -3,7 +3,7 @@ function fpb(angka1, angka2) {
    for( var i = 1 ; i < angka2 ; i++ ){
        //angka1 dan angka 2 harus habis dibagi i
        //i merupakan representasi dari fpb
-       if(angka1 % i === 0 && angka2 % i === 0){
+       if(angka1 % i === 0 && angka2 % i === 0){//untuk mencari fpb dari dua bilangan hasil dari penghitungan(pembagian) angka2 dan angka1 
            hasil = i
        }
    }return hasil;
