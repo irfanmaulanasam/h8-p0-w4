@@ -10,14 +10,14 @@ function countProfit(shoppers) {
     return arrResult;
   }
 
-  for (var i = 0; i < listBarang.length; i++) {
+  for ( var i = 0 ; i < listBarang.length ; i++ ) {
     var objShopper = {};
     var arrShopper = [];
     var amountOf = listBarang[i][2];
     var amountRes = 0;
-    for (var j = 0; j < shoppers.length; j++) {
-      if (listBarang[i][0] === shoppers[j].product && amountOf >= shoppers[j].amount) {
-        arrShopper.push(shoppers[j].name);
+    for ( var j = 0 ; j < shoppers.length ; j++ ) {
+      if ( listBarang[i][0] === shoppers[j].product && amountOf >= shoppers[j].amount ) {
+        arrShopper.push( shoppers[j].name );
         amountRes += shoppers[j].amount;
         amountOf -= shoppers[j].amount;
       }
