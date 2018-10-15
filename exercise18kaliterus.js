@@ -1,19 +1,11 @@
 function kaliTerusRekursif(angka) {
-  var angkaStr=String(angka);
-  
-  console.log(angkaStr);
-  console.log('.........');
-  
+  var angkaStr=String(angka);  
   if(angkaStr.length===1){
     return angka;
   } else {
     var kaliTerus = 1;
     for (var i = 0; i < angkaStr.length; i++) {
       kaliTerus = kaliTerus * Number(angkaStr[i]);
-      // console.log(angkaStr[i]);
-      // console.log('*******');
-      console.log(kaliTerus);
-      console.log('::::::');
     }
     return kaliTerusRekursif(kaliTerus);
 

@@ -1,35 +1,28 @@
 function hitungHuruf(kata) {
-var kataSplit = kata.split(' ');
-//   console.log('memecah kalimat'+kataSplit);
-  var banding = 0;
-  var kataFinal = '';
+  // console.log('memisah kalimat dengan spasi')
+var splitKalimat = kata.split(' ');
+  var tempKata = 0;
+  var mecahkata = '';
   
-  for(var i = 0; i < kataSplit.length; i ++) {
-    //melooping kata
-    // console.log('i for ' + kataSplit[i]); 
-    kataFinal = kataSplit[i];
+  for(var i = 0; i < splitKalimat.length; i ++) {
+    mecahkata = splitKalimat[i];
     var huruf = 0;
-    for(var j = 0; j < kataSplit[i].length; j++) {
-      //melooping huruf
-    //   console.log('j for ' + kataSplit[i][j]);
-      var arrHuruf = kataFinal[j];
-      //console.log(j,arrHuruf);
-      for(var k = 0; k < kataFinal.length; k++) { 
-        //melooping huruf yang sama
-        //console.log('k for ' + kataSplit[i][k]);
-        //console.log(kataFinal[k]);
-        if((j !== k) && (arrHuruf === kataFinal[k])) { 
+    for(var j = 0; j < splitKalimat[i].length; j++) {
+      var arrHuruf = mecahkata[j];
+      for(var k = 0; k < mecahkata.length; k++) { 
+        // console.log('proses looping dan condition untuk memilah huruf');
+        if((j !== k) && (arrHuruf === mecahkata[k])) { 
           //menentukan jumlah huruf yang sama
           huruf++;
         //   console.log(huruf);
         }
       }
     }
-    if(huruf > banding) { 
+    if(huruf > tempKata) { 
       //menentukan kata pertama yang diambil dari jumlah huruf yang sama
-      banding = huruf;
-      kataSplit = kataFinal;
-    return kataFinal;
+      tempKata = huruf;
+      splitKalimat = mecahkata;
+    return mecahkata;
     }
   }
 }

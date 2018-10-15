@@ -1,8 +1,6 @@
 function totalDigitRekursif(angka) {
   var digit = Number(String(angka).slice(0,1));
-  //console.log('digit' + digit);
   angka = Number(String(angka).slice(1));
-  //console.log('angka' + angka);
   if(! angka) {
     return digit;
   }
