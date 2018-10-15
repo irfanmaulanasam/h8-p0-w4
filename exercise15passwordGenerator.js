@@ -1,15 +1,15 @@
 function changeVocals (str) {
 	var vocal = [
-								[ 'a', 'b' ],
-								[ 'e', 'f' ],
-								[ 'i', 'j' ],
-								[ 'o', 'p' ],
-								[ 'u', 'v' ],
-								[ 'A', 'B' ],
-								[ 'E', 'F' ],
-								[ 'I', 'J' ],
-								[ 'O', 'P' ],
-								[ 'U', 'V' ],
+				[ 'a', 'b' ],
+				[ 'e', 'f' ],
+				[ 'i', 'j' ],
+				[ 'o', 'p' ],
+				[ 'u', 'v' ],
+				[ 'A', 'B' ],
+				[ 'E', 'F' ],
+				[ 'I', 'J' ],
+				[ 'O', 'P' ],
+				[ 'U', 'V' ],
 							];
 	var alfabet = '';
 	var isFind = false;
