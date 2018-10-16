@@ -27,7 +27,11 @@ function shoppingTime(memberId, money) {
       Object.changeMoney =  hitung;
       
     } 
-    //  console.log(hitung)
+    if(memberId === '' || memberId === undefined && money === undefined){
+      return 'Mohon maaf, toko X hanya berlaku untuk member saja';
+    } else if(money < 50000){
+      return 'Mohon maaf, uang tidak cukup';
+    }
   }
   return Object
 }
