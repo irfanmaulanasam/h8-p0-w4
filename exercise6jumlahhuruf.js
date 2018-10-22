@@ -4,21 +4,21 @@ var splitKalimat = kata.split(' ');
   var tempKata = 0;
   var mecahkata = '';
   
-  for(var i = 0; i < splitKalimat.length; i ++) {
-    mecahkata = splitKalimat[i];
+  for( var i = 0 ; i < splitKalimat.length ; i ++ ) {
+    mecahkata = splitKalimat [i];
     var huruf = 0;
-    for(var j = 0; j < splitKalimat[i].length; j++) {
+    for( var j = 0 ; j < splitKalimat[i].length ; j++ ) {
       var arrHuruf = mecahkata[j];
-      for(var k = 0; k < mecahkata.length; k++) { 
+      for( var k = 0; k < mecahkata.length ; k++ ) { 
         // console.log('proses looping dan condition untuk memilah huruf');
-        if((j !== k) && (arrHuruf === mecahkata[k])) { 
+        if(( j !== k ) && ( arrHuruf === mecahkata [k] )) { 
           //menentukan jumlah huruf yang sama
-          huruf++;
+          huruf ++;
         //   console.log(huruf);
         }
       }
     }
-    if(huruf > tempKata) { 
+    if( huruf > tempKata ) { 
       //menentukan kata pertama yang diambil dari jumlah huruf yang sama
       tempKata = huruf;
       splitKalimat = mecahkata;
